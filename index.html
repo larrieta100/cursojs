@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+        <h1>Curso de JavaScript / calcular la suma de dos numeros </h1>
+        <form onsubmit="suma(event)">
+        <h2>Ingrese el primer numero</h2>
+        <input type="text" id = "num1">
+        <h2></h2>
+        <h2>Ingrese el segundo numero</h2>
+        <input type="text" id="num2">
+        <h2></h2>
+        <h2>El resultado es: </h2>
+        <input type="text" id = "num3">
+        <button>sumar</button>
+        </form>
+
+    <script>
+        
+    function suma(event) {
+            event.preventDefault();
+            let sum1 = parsefloat(document.querySelector("#num1").Value);
+            let sum2 = parsefloat(document.querySelector("#num2").Value);
+            document.querySelector("#num3").value = sum1 + sum2;
+        }
+
+    </script>
+</body>
+</html>
